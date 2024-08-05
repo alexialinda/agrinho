@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Full-Screen - Tecnologia no Campo e na Cidade</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Evita scroll na página */
+        }
+        .banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Ocupa a altura total da tela */
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+            color: white;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .banner h1 {
+            font-size: 5em; /* Tamanho maior do título */
+            margin: 0;
+            padding: 10px;
+        }
+        .banner p {
+            font-size: 2em; /* Tamanho maior das descrições */
+            margin: 10px 0;
+            padding: 0 20px;
+        }
+        .banner .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Ajusta o espaço entre as imagens */
+            margin-top: 20px;
+            width: 100%;
+            max-width: 1200px; /* Limite máximo de largura para centralizar o conteúdo */
+        }
+        .banner .images img {
+            width: 250px; /* Tamanho maior das imagens */
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .banner .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+        .banner .content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>Do Campo à Cidade</h1>
+            <p>Transformando a Vida com Tecnologia</p>
+            <p>Agricultura Moderna e Inovação Urbana</p>
+            <div class="images">
+                <img src="imagens/tecnologiaagricola.jpg" alt="Tecnologia Agrícola">
+                <img src="imagens/drone.jpg" alt="Drones no Campo">
+                <img src="imagens/celular.jpg" alt="Smartphones">
+                <img src="imagens/unnamed-1.jpg" alt="Computadores Modernos">
+                <img src="imagens/internet-das-coisas-e-geo.jpg" alt="Internet das Coisas">
+                <img src="imagens/curso-clube-robotica.jpg" alt="Robótica">
+                <img src="imagens/imagem.webp" alt="Agricultura de Precisão">
+                <img src="imagens/unnamed.png" alt="Energia Renovável">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
